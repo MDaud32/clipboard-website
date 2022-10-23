@@ -1,6 +1,8 @@
 import logo from './assets/images/logo.svg';
 import computer from './assets/images/image-computer.png';
 import clipboard from './assets/images/image-devices.png';
+import { CgCopy, CgEye } from 'react-icons/cg';
+import { MdOutlineTextSnippet } from 'react-icons/md';
 function App() {
   return (
     <div className="">
@@ -88,6 +90,41 @@ function App() {
           alt="device image"
           className="w-full sm:w-3/4 items-center mx-auto"
         />
+      </div>
+      {/* workflow */}
+      <div className="flex flex-col justify-center max-w-6xl mx-auto mt-44">
+        <div className="mx-auto space-y-4 mb-16">
+          <h2 className="text-5xl text-gray-700 text-center font-semibold">
+            Supercharge your workflow
+          </h2>
+          <p className="text-2xl text-gray-500 max-w-3xl text-center">
+            We've got the tools to boost your productivity.
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-around mb-10 gap-7 w-3/4 sm:w-full mx-auto">
+          <div className="flex flex-col text-center items-center gap-4">
+            <CgCopy className="text-[3rem] text-gray-400" />
+            <h2 className="text-2xl">Create Blacklist</h2>
+            <p className="text-xl text-gray-500 max-w-md">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div className="flex flex-col text-center items-center gap-4">
+            <MdOutlineTextSnippet className="text-[3rem] text-gray-400" />
+            <h2 className="text-2xl">Plain Text Snippets</h2>
+            <p className="text-xl text-gray-500 max-w-md">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div className="flex flex-col text-center items-center gap-4">
+            <CgEye className="text-[3rem] text-gray-400" />
+            <h2 className="text-2xl">Sneak Preview</h2>
+            <p className="text-xl text-gray-500 max-w-md">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
