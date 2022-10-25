@@ -1,8 +1,19 @@
 import logo from './assets/images/logo.svg';
 import computer from './assets/images/image-computer.png';
 import clipboard from './assets/images/image-devices.png';
-import { CgCopy, CgEye } from 'react-icons/cg';
+import {
+  CgCopy,
+  CgEye,
+  CgGoogle,
+  CgFacebook,
+  CgInstagram,
+} from 'react-icons/cg';
 import { MdOutlineTextSnippet } from 'react-icons/md';
+import google from './assets/images/logo-google.png';
+import hp from './assets/images/logo-hp.png';
+import ibm from './assets/images/logo-ibm.png';
+import microsoft from './assets/images/logo-microsoft.png';
+import vector from './assets/images/logo-vector-graphics.png';
 function App() {
   return (
     <div className="">
@@ -124,6 +135,67 @@ function App() {
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row gap-24 justify-center mt-24 mb-24 w-72 mx-auto">
+        <img src={google} alt="" className="" />
+        <img src={hp} alt="" className="" />
+        <img src={ibm} alt="" className="" />
+        <img src={microsoft} alt="" className="" />
+        <img src={vector} alt="" className="" />
+      </div>
+      <div>
+        <div className="max-w-6xl mx-auto text-center mb-40 px-10 pt-16">
+          <h3 className="text-5xl font-semibold text-gray-700">
+            Clipboard for iOS and MacOS
+          </h3>
+          <p className="text-gray-500 text-2xl mt-7 max-w-3xl mx-auto">
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you're ready to start adding to your clipboard.
+          </p>
+          <div className="w-full flex flex-col sm:flex-row justify-center mt-8 gap-10 ">
+            <button className="rounded-full border-2 px-4 p-4 bg-green-500 hover:opacity-80 shadow-lg transition hover:-translate-y-1 duration-200  ">
+              Download for IOS
+            </button>
+            <button className="rounded-full border-2 px-4 p-4 bg-blue-500 hover:opacity-80 shadow-lg transition hover:-translate-y-1 duration-200">
+              Download for Mac
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row bg-gray-100 justify-center sm:space-x-44 space-y-12 py-16">
+        <img
+          src={logo}
+          alt=""
+          className="w-[6rem] h-[6rem] self-end sm:mx-0 mx-auto"
+        />
+        <div className=" text-2xl gap-8 text-gray-400 items-center text-center sm:text-start sm:grid-cols-3 grid">
+          <a href="#" className="">
+            FAQs
+          </a>
+          <a href="#" className="">
+            Privacy Policy
+          </a>
+          <a href="#" className="">
+            Install Guide
+          </a>
+          <a href="#" className="">
+            Contact Us
+          </a>
+          <a href="#" className="">
+            Press Kit
+          </a>
+        </div>
+        <div className="flex flex-row items-center text-4xl gap-2 mx-auto">
+          <a href="#" className="">
+            <CgGoogle />
+          </a>
+          <a href="#" className="">
+            <CgFacebook />
+          </a>
+          <a href="#" className="">
+            <CgInstagram />
+          </a>
         </div>
       </div>
     </div>
